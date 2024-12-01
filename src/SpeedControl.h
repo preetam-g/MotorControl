@@ -11,7 +11,7 @@ class SpeedControl
 {
 
 public:
-    SpeedControl(Motor& motor, Encoder& encoder, double& desRpm, uint8_t& rpm_delay)
+    SpeedControl(Motor& motor, Encoder& encoder, double desRpm, uint8_t rpm_delay)
         : motor(motor), encoder(encoder) 
     {
         this->desired = desRpm;

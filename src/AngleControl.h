@@ -11,7 +11,7 @@ class AngleControl
 {
 
 public:
-    AngleControl(Motor& motor, Encoder& encoder, double& desAngle)
+    AngleControl(Motor& motor, Encoder& encoder, double desAngle)
         : motor(motor), encoder(encoder), desired(desAngle) {}
 
     void setDesired(double desAngle) 
